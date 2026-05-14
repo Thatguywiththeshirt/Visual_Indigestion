@@ -1,0 +1,90 @@
+# THE DEFINITIVE, MOSTLY INACCURATE, AND ENTIRELY UNAVOIDABLE GUIDE TO CVE REPORTING
+
+*A compendium of despair, bureaucracy, and applied stubbornness.*
+
+In the beginning, the Code was created. This has made a lot of people very angry and been widely regarded as a bad move. Following closely on the heels of the Code came the Bug, and shortly thereafter, the incredibly optimistic notion that someone, somewhere, might actually want to fix it.
+
+This brings us to the Common Vulnerabilities and Exposures (CVE) reporting process. To the uninitiated, getting a CVE assigned sounds like a noble pursuit—a digital knighthood bestowed upon those who protect the realm. To the experienced researcher, it is universally recognized as an elaborate form of bureaucratic self-harm, managed by entities that operate on the same temporal physics as continental drift.
+
+What follows is the definitive, temporally fluid, and absolutely factual[^1] guide to reporting a vulnerability.
+
+---
+
+### PHASE I: THE DISCOVERY (OR: "WHAT IS THAT SMELL IN THE MEMORY HEAP?")
+
+It usually begins at 3:14 AM. You are fueled entirely by cold pizza and a beverage that is almost, but not quite, entirely unlike tea. You notice that if you insert a string of precisely 4,096 capital 'A's into the username field of a globally ubiquitous smart-toaster, the appliance doesn't just crash; it briefly achieves sentience, questions the nature of free will, and then physically prints out the administrator's banking details on a slice of pumpernickel.
+
+You have discovered a Zero-Day. The universe holds its breath. You must now navigate the Abyss.
+
+---
+
+### PHASE II: THE VENDOR COMMUNICATION MAMBO (A TIMELINE)
+
+The first step in any responsible disclosure is contacting the Vendor. The "Vendor" is a mythological entity, much like the Yeti or an affordable printer cartridge, believed to reside in a towering citadel of middle management.
+
+**Day 1:** You send an email to `security@megacorp.void`. The email is encrypted using PGP. This is a mistake. No one at MegaCorp has remembered their PGP passphrase since 2012.
+
+**Day 4:** You resend the email in plain text. It is immediately intercepted by an automated system named AutoResponse-Bot 9000, which replies: *"Thank you for your inquiry about [NULL]. If you are experiencing issues with your toaster's Wi-Fi, please ensure it is plugged in."*
+
+**Day 14:** You manage to find the direct email of a Lead Developer on LinkedIn. You send the exploit.
+
+**Day 15:** The Lead Developer replies. They explain, with the gentle, patronizing tone usually reserved for golden retrievers that have brought back a stick instead of a duck, that this is not a bug, but a "highly requested feature" designed to "streamline financial transactions via baked goods."
+
+**Day 30:** You threaten, politely, to publish your findings on a blog.
+
+**Day 31:** You receive an email from the MegaCorp Legal Department. The Legal Department does not operate using standard time. They exist in a dimension made entirely of billable hours and cease-and-desist letters. They inform you that observing the toaster is a violation of the Digital Millennium Copyright Act, the Geneva Convention, and a vaguely worded treaty from 1492.
+
+**Day 45:** A compromise is reached. MegaCorp agrees to look at the bug, provided you sign a Non-Disclosure Agreement written in a dialect of ancient Sumerian that binds your soul to a filing cabinet in Delaware.
+
+---
+
+### PHASE III: THE BUREAUCRATIC SINGULARITY (THE FLOWCHART)
+
+Having convinced the Vendor that their toaster should not be distributing wealth, you must now acquire a CVE identifier from the CNA (CVE Numbering Authority). This is a process of pure, crystalline logic.
+
+**START:** Do you have a vulnerability?
+
+* **NO:** Go outside. Enjoy the sunshine. Pet a dog.
+* **YES:** Proceed to **Step A**.
+
+**Step A:** Are you absolutely sure it isn't just a DNS configuration error?[^2]
+
+* **YES, IT'S DNS:** We told you so. Go home.
+* **NO, IT'S A REAL BUG:** Proceed to **Step B**.
+
+**Step B:** Submit your request to the CNA web portal. Did the portal crash while submitting?
+
+* **YES:** This is CVE-2026-0001. You cannot report it, because the portal is down.
+* **NO:** The portal accepted your submission. Please wait. Proceed to **Step C**.
+
+**Step C (The Waiting Room of Eternity):** Have six months passed?
+
+* **NO:** Sit quietly. Stare at the wall. Do not think about the millions of vulnerable toasters currently burning bread around the globe. Loop back to **Step C**.
+* **YES:** You receive a message from the CNA. They require more information. Specifically, they need to know the exact phase of the moon when the bug was discovered, and whether the code was compiled on a Tuesday.
+
+**Step D:** You provide the information. A mystical algorithm, maintained by a secretive order of monks in a datacenter in Virginia, spins into action.
+
+* **RESULT:** You are awarded **CVE-2026-99999**. It feels anti-climactic. You expected a brass band, or at least a commemorative mug. You get a text file entry.
+
+---
+
+### PHASE IV: THE PATCH AND THE INEVITABLE DOOM
+
+The final phase is Remediation. MegaCorp announces they have "addressed a minor theoretical anomaly" in their firmware. They release Version 2.0.
+
+**The Timeline of the Patch:**
+
+* **Hour 1:** Patch is deployed globally via the cloud.
+* **Hour 2:** The patch successfully prevents the buffer overflow by entirely disabling the toaster's heating elements.
+* **Hour 3:** The toaster is now perfectly secure. It is also, essentially, a highly aerodynamic brick.
+* **Hour 4:** Users complain they can no longer make toast. MegaCorp issues a statement saying that toast is an outdated paradigm, and users should transition to eating raw flour and water to synergize with the new security posture.
+* **Hour 48:** A new researcher (possibly you, wearing a fake mustache) discovers that while the toaster can no longer make toast, if you ping it exactly 42 times, it will cheerfully bypass all firewalls and mine cryptocurrency for a server in Elbląg.
+
+The great wheel turns. The cycle begins anew. You sigh, open a fresh terminal window, and reach for another slice of cold pizza.
+
+DON'T PANIC.
+
+---
+
+[^1]: *Factual* here is used in the strictest quantum sense; meaning it is true in at least one parallel universe, though almost certainly not this one.
+[^2]: It is a fundamental law of the universe, written into the very fabric of reality alongside gravity and the speed of light, that it is always DNS. Even when it isn't DNS, it's just DNS biding its time.
